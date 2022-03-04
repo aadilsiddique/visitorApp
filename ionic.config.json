@@ -1,0 +1,7 @@
+{
+  "name": "SAT",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
