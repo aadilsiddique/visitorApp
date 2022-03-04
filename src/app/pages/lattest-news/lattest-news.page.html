@@ -1,0 +1,88 @@
+<ion-header >
+  <ion-toolbar class="new-background-color">
+    <ion-title>Lattest News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content class="ion-no-padding">
+      <ion-list class="ion-no-padding">
+
+        <ion-item-group class="ion-margin-bottom" *ngFor="let item of articlesArr" >
+          <ion-item lines="none" class="ion-no-margin">
+            <ion-thumbnail slot="start">
+              <ion-img [src]="item.urlToImage"></ion-img>
+            </ion-thumbnail>
+            <ion-label class="ion-no-margin">
+              <h4>{{item.author}}</h4>
+              <!-- <ion-button class="ion-float-right" (click)="addTeacher(item)" slot="end">Add Teacher</ion-button> -->
+              <!-- <ion-button class="ion-float-right" (click)="viewTeacher(item)" slot="end">View Teacher</ion-button> -->
+            </ion-label>
+            <ion-col class="ion-no-padding ion-align-self-center">
+              <ion-label class="ion-no-margin ion-text-center">
+              <ion-button class="ion-float-right" (click)="openWeb(item)" slot="end">
+                View Article</ion-button>
+            </ion-label>
+            </ion-col>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-margin">
+            <ion-grid class="ion-no-padding">
+              <ion-row class="ion-align-items-center">
+                <ion-col class="ion-no-padding ion-align-self-center">
+                  <ion-label class="ion-no-margin">
+                    <h5 class="label-text-sm">Source</h5>
+                    <h4 class="text-info2">{{item.srcname}}</h4>
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-margin">
+            <ion-grid class="ion-no-padding">
+              <ion-row class="ion-align-items-center">
+                <ion-col class="ion-no-padding ion-align-self-center">
+                  <ion-label class="ion-no-margin">
+                    <h5 class="label-text-sm">Title</h5>
+                    <h4 class="text-info2">{{item.title}}</h4>
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-margin">
+            <ion-grid class="ion-no-padding">
+              <ion-row class="ion-align-items-center">
+                <ion-col class="ion-no-padding ion-align-self-center">
+                  <ion-label class="ion-no-margin">
+                    <h5 class="label-text-sm">Description</h5>
+                    <h4 class="text-info2">{{item.description}}</h4>
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-margin">
+            <ion-grid class="ion-no-padding">
+              <ion-row class="ion-align-items-center">
+                <ion-col class="ion-no-padding ion-align-self-center">
+                  <ion-label class="ion-no-margin">
+                    <h5 class="label-text-sm">Date</h5>
+                    <h4 class="text-info2">{{item.date}}</h4>
+                  </ion-label>
+                </ion-col>
+                <ion-col class="ion-no-padding ion-align-self-center">
+                  <ion-label class="ion-no-margin ion-text-center">
+                    <h5 class="label-text-sm">Time</h5>
+                    <h4 class="text-info2">{{item.time }}</h4>
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </ion-item-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

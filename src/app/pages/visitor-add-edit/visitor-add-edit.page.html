@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>Add Visitor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #addEditVisitor="ngForm" (ngSubmit)="submit(addEditVisitor)">
+  <ion-card>
+    <ion-card-content class="ion-no-padding">
+      <ion-grid class="ion-no-padding">
+        <ion-row>
+   
+
+            <ion-col size="12" size-md="6" offset-md="3">        
+                <ion-item class="ion-margin-bottom">
+                  <ion-label position="stacked"> Name <span class="mandatory">*</span></ion-label>
+                  <ion-input type="text" [ngClass]="{invalid:!valid}" name="names" required #names="ngModel"
+                  [(ngModel)]="visitorObj.name" pattern=".*\S+.*" ></ion-input>
+                </ion-item>
+                <p class="errorMsg" *ngIf="!names.value && names.touched || !names.value && !valid" >
+                  <ion-icon name="information-circle"></ion-icon>
+                  Please enter Name
+                </p>
+              </ion-col>
+
+          <ion-col size="12" size-md="6" offset-md="3">        
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked"> Email <span class="mandatory">*</span></ion-label>
+              <ion-input type="email" [ngClass]="{invalid:!valid}" name="emails" required #emails="ngModel"
+              [(ngModel)]="visitorObj.email" pattern=".*\S+.*" ></ion-input>
+            </ion-item>
+            <p class="errorMsg" *ngIf="!emails.value && emails.touched || !emails.value && !valid" >
+              <ion-icon name="information-circle"></ion-icon>
+              Please enter Email
+            </p>
+          </ion-col>
+
+          <ion-col size="12" size-md="6" offset-md="3">        
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked">Type Of Visit <span class="mandatory">*</span></ion-label>
+              <ion-select placeholder="Select One" [ngClass]="{invalid:!valid}" name="visittype"  required #visittype="ngModel"
+               [(ngModel)]="visitorObj.typeOfVisit" interface="popover">
+                <ion-select-option *ngFor="let option of visitTypeArr;" value="{{option.visitId}}">{{option.visitDesc}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <p class="errorMsg" *ngIf="!visittype.value && visittype.touched || !visittype.value && !valid">
+              <ion-icon name="information-circle"></ion-icon>
+              Please enter Type Of Visit
+            </p>
+          </ion-col>
+
+          <ion-col size="12" size-md="6" offset-md="3">        
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked"> Person to visit <span class="mandatory">*</span></ion-label>
+              <ion-input type="text" [ngClass]="{invalid:!valid}" name="visitperson" required #visitperson="ngModel"
+              [(ngModel)]="visitorObj.personVisit" pattern=".*\S+.*" ></ion-input>
+            </ion-item>
+            <p class="errorMsg" *ngIf="!visitperson.value && visitperson.touched || !visitperson.value && !valid" >
+              <ion-icon name="information-circle"></ion-icon>
+              Please enter Person to visit
+            </p>
+          </ion-col>
+          <ion-col size="12" size-md="6" offset-md="3">        
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked"> Date of entry </ion-label>
+              <ion-input type="test" [ngClass]="{invalid:!valid}" name="entrydate" required #entrydate="ngModel"
+              [(ngModel)]="visitorObj.entryDate" [disabled]="readonlyData" pattern=".*\S+.*" ></ion-input>
+            </ion-item>
+          </ion-col>
+
+          <ion-col size="12" size-md="6" offset-md="3">
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked">Time of entry <span class="mandatory">*</span></ion-label>
+              <ion-input type="text"  (click)="openStartTimePicker()" [ngClass]="{invalid:!valid}"
+                  name="starttime" required #starttime="ngModel" [(ngModel)]="visitorObj.start_time"
+                  placeholder="Start Time"></ion-input>
+                <ion-icon (click)="openStartTimePicker()" class="feather icon-clock input-icons" slot="end"></ion-icon>
+              </ion-item>
+              <p class="errorMsg" *ngIf="!starttime.value && starttime.touched || !starttime.value && !valid">
+                <ion-icon name="information-circle"></ion-icon>
+                Please select Entry Time
+              </p>
+          </ion-col>
+          <ion-col size="12" size-md="6" offset-md="3">
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked">Time of exit</ion-label>  
+              <ion-input type="text"  (click)="openEndTimePicker()" [ngClass]="{invalid:!valid}"
+              name="endtime" #endtime="ngModel" [(ngModel)]="visitorObj.end_time" placeholder="End Time">
+            </ion-input>
+            <ion-icon (click)="openEndTimePicker()" class="feather icon-clock input-icons" slot="end"></ion-icon>
+          </ion-item>
+          </ion-col>
+
+          <ion-col size="12" size-md="6" offset-md="3" class="ion-text-center">     
+            <ion-button class="btn-submit" type="submit">Submit</ion-button>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</form>
+</ion-content>

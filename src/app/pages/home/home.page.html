@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="new-background-color">
+    <ion-title>
+      Dashboard
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content class="ion-no-padding">
+      <ion-row class="ion-no-padding" >
+        <ion-col size="6">
+          <ion-item lines="none" class="ion-no-margin" (click)="showVisitor()">
+            <ion-label>
+              <h4 class="dashboard-title">Visitor log</h4>
+            </ion-label>
+          </ion-item>
+        </ion-col>
+    
+        <ion-col size="6">
+          <ion-item lines="none" class="ion-no-margin" (click)="showNews()">
+            <ion-label>
+              <h4 class="dashboard-title">NEWS listing</h4>
+            </ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

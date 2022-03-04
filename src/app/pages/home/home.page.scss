@@ -1,0 +1,45 @@
+.ion-color-light {
+  --ion-color-base: #f9f9ff !important;
+}
+ion-card-header {
+  padding: 10px;
+}
+ion-list, .list-md {
+  --background:transparent;
+  background: transparent;
+}
+.list-md .item-lines-none {
+  --min-height: 35px;
+}
+ion-item-group {
+  border-left: 4px solid #3F6CAE;
+}
+h4 {
+  font-family: Open Sans SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  /* identical to box height */
+  color: #3F6CAE;
+  display: inline;
+}
+.label-text-sm {
+  font-family: Open Sans SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .8rem;
+  /* identical to box height */
+  color: #A5A5A5;
+}
+.text-info2 {
+  font-family: Open Sans SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .9rem;
+  /* identical to box height */
+  color: #7E7B7B;
+}
+.new-background-color{
+  --background: #4c8dff;
+}
+ion-button{ --background: linear-gradient(180deg, #12B3EB 0%, #5460F9 100%);}

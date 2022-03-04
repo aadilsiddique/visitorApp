@@ -1,0 +1,259 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* Icons */
+@import "./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css";
+@import "./assets/fonts/feather/iconfont.css";
+/* Icons */
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans Italic'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans Light';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans Light'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-Light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans Light Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans Light Italic'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans SemiBold';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans SemiBold'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans SemiBold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans SemiBold Italic'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-SemiBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans Bold'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans Bold Italic'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans ExtraBold';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans ExtraBold'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-ExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans ExtraBold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans ExtraBold Italic'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-ExtraBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans Light Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans Light Regular'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-Light-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Open Sans Condensed Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans Condensed Bold'), url('./assets/fonts/open-sans-cufonfonts-webfont/OpenSans-CondBold.woff') format('woff');
+}
+
+
+.item-has-focus.label-stacked.sc-ion-label-md-h:not(.ion-color), .item-has-focus .label-stacked.sc-ion-label-md-h:not(.ion-color), .item-has-focus.label-floating.sc-ion-label-md-h:not(.ion-color), .item-has-focus .label-floating.sc-ion-label-md-h:not(.ion-color) {
+    // color: #FED8BC;
+    // color: #333333;
+    color: #222222;
+}
+.item-has-focus.ion-color.label-stacked.sc-ion-label-md-h:not(.ion-color), .item-has-focus.ion-color .label-stacked.sc-ion-label-md-h:not(.ion-color), .item-has-focus.ion-color.label-floating.sc-ion-label-md-h:not(.ion-color), .item-has-focus.ion-color .label-floating.sc-ion-label-md-h:not(.ion-color) {
+  color: #000000;
+}
+.item-interactive.item-has-focus {
+    --highlight-background: #FED8BC;
+}
+.fab-add {
+    --background: linear-gradient(180deg, #12B3EB 0%, #5460F9 100%);
+    --box-shadow: 0px 4px 9px #B0BBC0;
+}
+.fab-save {
+    --background: linear-gradient(180deg, #099773 0%, #43B692 100%);
+    --box-shadow: 0px 4px 9px #B0BBC0;
+}
+.btn-submit {
+  --background: linear-gradient(90deg, #FEC620 12%, #FEC620 88%);
+  --box-shadow: 0px 8px 12px #E8E8E8;
+  --border-radius: 6px;
+  color: #ffffff;
+  font-weight: 600;
+}
+ion-content {
+    --background:#F9F9FF;
+}
+ion-avatar {
+    width: 64px;
+    height: 64px;
+}
+
+.toolbar-title {
+    text-overflow: inherit;
+    white-space: normal;
+    text-align: left;
+    font-size:1.3em;
+    overflow: initial!important;
+  }
+  ion-card {
+    --background:transparent;
+    box-shadow: none;
+  }
+  .cust-info-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: #FF8C00;
+  }
+  // .cust-info-title span {
+  //     color: #3D3B38;
+  // }
+  // .article-info-title {
+  //   font-family: Open Sans;
+  //   font-style: normal;
+  //   font-weight: normal;
+  //   font-size: 1.1rem;
+  //   color: #0061FF;
+  // }
+  // .article-info-title span {
+  //     color: #3D3B38;
+  // }
+  .list-md-lines-full .item, .list-md .item-lines-full {
+    --border-width: 0 0 1px 0;
+    --border-color: #F3F6FF;
+}
+  .label-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .95rem;
+    /* identical to box height */
+    // color: #5C6C9C;
+    color: #000000;
+}
+.text-info {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .85rem;
+    /* identical to box height */
+    color: #2F3853;
+    
+}
+
+.label-stacked.sc-ion-label-md-h, .label-floating.sc-ion-label-md-h {
+  margin-top: -5px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: .95rem;
+  // color: #5C6C9C;
+  color: #000000;
+}
+.native-input.sc-ion-input-md, ion-select, ion-select-option, .select-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  /* identical to box height */
+  color: #2F3853;
+
+}
+
+ion-item-group {
+  // background: #FFFFFF;
+  box-shadow: 0px -4px 10px #EFEEFF, 0px 4px 10px #EFEEFF;
+  border-radius: 4px;
+}
+
+
+ion-select{
+  width: 100%; 
+  max-width: 100%; 
+  padding: 10px 0;
+}
+
+.errorMsg {
+  color: red;
+}
