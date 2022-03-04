@@ -1,0 +1,19 @@
+/.travis.yml/1.1/Sat Oct 26 08:15:00 1985/-kb/
+/AUTHORS.md/1.1/Sat Oct 26 08:15:00 1985//
+/CHANGES.md/1.1/Sat Oct 26 08:15:00 1985//
+/CONTRIBUTING.md/1.1/Sat Oct 26 08:15:00 1985//
+/HISTORY.md/1.1/Sat Oct 26 08:15:00 1985//
+/LICENSE.md/1.1/Sat Oct 26 08:15:00 1985//
+/README.md/1.1/Sat Oct 26 08:15:00 1985//
+/SQLitePlugin.coffee.md/1.1/Sat Oct 26 08:15:00 1985//
+D/bin////
+/circle.yml/1.1/Sat Oct 26 08:15:00 1985/-kb/
+D/node_modules////
+/package-lock.json/1.1/Thu Jul 15 05:29:02 2021//
+/package.json/1.1/Thu Jul 15 05:28:50 2021//
+/plugin.xml/1.1/Sat Oct 26 08:15:00 1985//
+D/scripts////
+D/spec////
+D/src////
+D/tests////
+D/www////

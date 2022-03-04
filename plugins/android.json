@@ -1,0 +1,97 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-datepicker": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-geolocation": {
+      "GPS_REQUIRED": "true",
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-request-location-accuracy": {
+      "PLAY_SERVICES_LOCATION_VERSION": "16.+",
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-native-spinner": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-open-native-settings": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-filechooser": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-file-opener2": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "com-badrit-base64": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "com-sarriaroman-photoviewer": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.intellect.camlinsat"
+    }
+  },
+  "dependent_plugins": {}
+}
